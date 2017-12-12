@@ -14,3 +14,5 @@ Feautres to add:
 5. Twofish
 
 All taken from here https://www.storagecraft.com/blog/5-common-encryption-algorithms/
+
+More to be added as they are discovered, could even look at blockchain or similar verifiction technologies that feautre crypto.
