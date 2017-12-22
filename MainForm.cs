@@ -19,7 +19,7 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
-            encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
+           // encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
         }
         
         private void CheckToEnableEncryptButton(object sender, EventArgs e)
@@ -46,6 +46,20 @@ namespace EncryptionHeckingCode
         private void encryptionMethodComboBox_DropDown(object sender, EventArgs e)
         {
             encryptionMethodComboBox.HighlightColor = Color.Gainsboro;
+        }
+
+
+
+
+
+        private void EncryptionMainForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EncryptionMainForm_Load_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

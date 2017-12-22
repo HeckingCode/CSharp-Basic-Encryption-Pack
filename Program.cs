@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EncryptionHeckingCode
+namespace Hecking_code_Encryption_pack
 {
     static class Program
     {
@@ -13,7 +16,7 @@ namespace EncryptionHeckingCode
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EncryptionMainForm());
+            Application.Run(new Form1());
         }
     }
 }
