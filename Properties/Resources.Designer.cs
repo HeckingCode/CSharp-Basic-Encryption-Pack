@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace Hecking_code_Encryption_pack.Properties
+=======
+namespace Hecking_encryption.Properties
+>>>>>>> master
 {
 
 
@@ -44,7 +48,11 @@ namespace Hecking_code_Encryption_pack.Properties
             {
                 if ((resourceMan == null))
                 {
+<<<<<<< HEAD
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Hecking_code_Encryption_pack.Properties.Resources", typeof(Resources).Assembly);
+=======
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Hecking_encryption.Properties.Resources", typeof(Resources).Assembly);
+>>>>>>> master
                     resourceMan = temp;
                 }
                 return resourceMan;

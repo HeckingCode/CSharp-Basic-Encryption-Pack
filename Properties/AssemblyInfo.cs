@@ -5,11 +5,19 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+<<<<<<< HEAD
 [assembly: AssemblyTitle("Hecking code Encryption pack")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Hecking code Encryption pack")]
+=======
+[assembly: AssemblyTitle("Hecking encryption")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Hecking encryption")]
+>>>>>>> master
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +28,11 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
+<<<<<<< HEAD
 [assembly: Guid("e8b093df-cf94-41cd-8c6b-65fbdbdc24a2")]
+=======
+[assembly: Guid("2b9bb949-4452-4f20-aca4-0546f1763d8f")]
+>>>>>>> master
 
 // Version information for an assembly consists of the following four values:
 //

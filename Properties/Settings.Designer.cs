@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace Hecking_code_Encryption_pack.Properties
+=======
+namespace Hecking_encryption.Properties
+>>>>>>> master
 {
 
 
