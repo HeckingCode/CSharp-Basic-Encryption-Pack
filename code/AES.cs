@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EncryptionHeckingCode
 {
-    class AES
+    class AES : Functions
     {
+       
     }
 }

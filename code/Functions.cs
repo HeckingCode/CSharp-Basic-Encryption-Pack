@@ -40,7 +40,7 @@ namespace EncryptionHeckingCode
             readonly int length;
 
             /// <summary>
-            /// Random key generator 
+            /// Randomly generated key
             /// </summary>
             /// <param name="length">desired length of the key</param>
             /// <param name="alphanumeric">whether the key is alphanumeric (true) or not (false)</param>

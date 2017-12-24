@@ -41,6 +41,7 @@
     <Compile Include="AdvancedComboBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="AES.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

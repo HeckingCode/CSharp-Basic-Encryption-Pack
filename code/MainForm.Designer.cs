@@ -36,16 +36,6 @@ namespace EncryptionHeckingCode
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.plaintextTextbox = new System.Windows.Forms.RichTextBox();
-            this.plaintextTextboxLabel = new System.Windows.Forms.Label();
-            this.encryptionKeyTextbox = new System.Windows.Forms.TextBox();
-            this.encryptionKeyLabel = new System.Windows.Forms.Label();
-            this.GenerateRandomKeyButton = new System.Windows.Forms.Button();
-            this.hideEncryptionKeyCheckbox = new System.Windows.Forms.CheckBox();
-            this.ciphertextLabel = new System.Windows.Forms.Label();
-            this.ciphertextTextbox = new System.Windows.Forms.RichTextBox();
-            this.encryptRadioButton = new System.Windows.Forms.RadioButton();
-            this.decryptRadioButton = new System.Windows.Forms.RadioButton();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.plaintextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +45,16 @@ namespace EncryptionHeckingCode
             this.plaintextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ciphertextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.encryptionKeyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.plaintextTextbox = new System.Windows.Forms.RichTextBox();
+            this.plaintextTextboxLabel = new System.Windows.Forms.Label();
+            this.encryptionKeyTextbox = new System.Windows.Forms.TextBox();
+            this.encryptionKeyLabel = new System.Windows.Forms.Label();
+            this.EncryptButton = new System.Windows.Forms.Button();
+            this.RandomKeyCheckBox = new System.Windows.Forms.CheckBox();
+            this.ciphertextLabel = new System.Windows.Forms.Label();
+            this.ciphertextTextbox = new System.Windows.Forms.RichTextBox();
+            this.encryptRadioButton = new System.Windows.Forms.RadioButton();
+            this.decryptRadioButton = new System.Windows.Forms.RadioButton();
             this.mainFormMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,6 +122,71 @@ namespace EncryptionHeckingCode
             this.saveToFileToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.saveToFileToolStripMenuItem.Text = "Save to file...";
             // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToolStripMenuItem,
+            this.pasteToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.plaintextToolStripMenuItem,
+            this.ciphertextToolStripMenuItem,
+            this.encryptionKeyToolStripMenuItem});
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            // 
+            // plaintextToolStripMenuItem
+            // 
+            this.plaintextToolStripMenuItem.Name = "plaintextToolStripMenuItem";
+            this.plaintextToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.plaintextToolStripMenuItem.Text = "Plaintext";
+            // 
+            // ciphertextToolStripMenuItem
+            // 
+            this.ciphertextToolStripMenuItem.Name = "ciphertextToolStripMenuItem";
+            this.ciphertextToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.ciphertextToolStripMenuItem.Text = "Ciphertext";
+            // 
+            // encryptionKeyToolStripMenuItem
+            // 
+            this.encryptionKeyToolStripMenuItem.Name = "encryptionKeyToolStripMenuItem";
+            this.encryptionKeyToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.encryptionKeyToolStripMenuItem.Text = "Encryption Key";
+            // 
+            // pasteToolStripMenuItem
+            // 
+            this.pasteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.plaintextToolStripMenuItem1,
+            this.ciphertextToolStripMenuItem1,
+            this.encryptionKeyToolStripMenuItem1});
+            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.pasteToolStripMenuItem.Text = "Paste";
+            // 
+            // plaintextToolStripMenuItem1
+            // 
+            this.plaintextToolStripMenuItem1.Name = "plaintextToolStripMenuItem1";
+            this.plaintextToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.plaintextToolStripMenuItem1.Text = "Plaintext";
+            // 
+            // ciphertextToolStripMenuItem1
+            // 
+            this.ciphertextToolStripMenuItem1.Name = "ciphertextToolStripMenuItem1";
+            this.ciphertextToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.ciphertextToolStripMenuItem1.Text = "Ciphertext";
+            // 
+            // encryptionKeyToolStripMenuItem1
+            // 
+            this.encryptionKeyToolStripMenuItem1.Name = "encryptionKeyToolStripMenuItem1";
+            this.encryptionKeyToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
+            this.encryptionKeyToolStripMenuItem1.Text = "Encryption Key";
+            // 
             // plaintextTextbox
             // 
             this.plaintextTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -159,26 +224,26 @@ namespace EncryptionHeckingCode
             this.encryptionKeyLabel.TabIndex = 6;
             this.encryptionKeyLabel.Text = "Encryption Key";
             // 
-            // GenerateRandomKeyButton
+            // EncryptButton
             // 
-            this.GenerateRandomKeyButton.Location = new System.Drawing.Point(141, 65);
-            this.GenerateRandomKeyButton.Name = "GenerateRandomKeyButton";
-            this.GenerateRandomKeyButton.Size = new System.Drawing.Size(104, 28);
-            this.GenerateRandomKeyButton.TabIndex = 7;
-            this.GenerateRandomKeyButton.Text = "Random";
-            this.GenerateRandomKeyButton.UseVisualStyleBackColor = true;
-            this.GenerateRandomKeyButton.Click += new System.EventHandler(this.GenerateRandomKeyButton_Click);
+            this.EncryptButton.Location = new System.Drawing.Point(141, 65);
+            this.EncryptButton.Name = "EncryptButton";
+            this.EncryptButton.Size = new System.Drawing.Size(104, 28);
+            this.EncryptButton.TabIndex = 7;
+            this.EncryptButton.Text = "Encrypt";
+            this.EncryptButton.UseVisualStyleBackColor = true;
+            this.EncryptButton.Click += new System.EventHandler(this.GenerateRandomKeyButton_Click);
             // 
-            // hideEncryptionKeyCheckbox
+            // RandomKeyCheckBox
             // 
-            this.hideEncryptionKeyCheckbox.AutoSize = true;
-            this.hideEncryptionKeyCheckbox.Location = new System.Drawing.Point(251, 68);
-            this.hideEncryptionKeyCheckbox.Name = "hideEncryptionKeyCheckbox";
-            this.hideEncryptionKeyCheckbox.Size = new System.Drawing.Size(90, 23);
-            this.hideEncryptionKeyCheckbox.TabIndex = 8;
-            this.hideEncryptionKeyCheckbox.Text = "Hide Key";
-            this.hideEncryptionKeyCheckbox.UseVisualStyleBackColor = true;
-            this.hideEncryptionKeyCheckbox.CheckedChanged += new System.EventHandler(this.hideEncryptionKeyCheckbox_CheckedChanged);
+            this.RandomKeyCheckBox.AutoSize = true;
+            this.RandomKeyCheckBox.Location = new System.Drawing.Point(251, 68);
+            this.RandomKeyCheckBox.Name = "RandomKeyCheckBox";
+            this.RandomKeyCheckBox.Size = new System.Drawing.Size(194, 23);
+            this.RandomKeyCheckBox.TabIndex = 8;
+            this.RandomKeyCheckBox.Text = "Randomly generate key";
+            this.RandomKeyCheckBox.UseVisualStyleBackColor = true;
+            this.RandomKeyCheckBox.CheckedChanged += new System.EventHandler(this.hideEncryptionKeyCheckbox_CheckedChanged);
             // 
             // ciphertextLabel
             // 
@@ -223,71 +288,6 @@ namespace EncryptionHeckingCode
             this.decryptRadioButton.Text = "Decrypt";
             this.decryptRadioButton.UseVisualStyleBackColor = true;
             // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "Edit";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plaintextToolStripMenuItem,
-            this.ciphertextToolStripMenuItem,
-            this.encryptionKeyToolStripMenuItem});
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            // 
-            // plaintextToolStripMenuItem
-            // 
-            this.plaintextToolStripMenuItem.Name = "plaintextToolStripMenuItem";
-            this.plaintextToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.plaintextToolStripMenuItem.Text = "Plaintext";
-            // 
-            // ciphertextToolStripMenuItem
-            // 
-            this.ciphertextToolStripMenuItem.Name = "ciphertextToolStripMenuItem";
-            this.ciphertextToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.ciphertextToolStripMenuItem.Text = "Ciphertext";
-            // 
-            // encryptionKeyToolStripMenuItem
-            // 
-            this.encryptionKeyToolStripMenuItem.Name = "encryptionKeyToolStripMenuItem";
-            this.encryptionKeyToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.encryptionKeyToolStripMenuItem.Text = "Encryption Key";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.plaintextToolStripMenuItem1,
-            this.ciphertextToolStripMenuItem1,
-            this.encryptionKeyToolStripMenuItem1});
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            // 
-            // plaintextToolStripMenuItem1
-            // 
-            this.plaintextToolStripMenuItem1.Name = "plaintextToolStripMenuItem1";
-            this.plaintextToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
-            this.plaintextToolStripMenuItem1.Text = "Plaintext";
-            // 
-            // ciphertextToolStripMenuItem1
-            // 
-            this.ciphertextToolStripMenuItem1.Name = "ciphertextToolStripMenuItem1";
-            this.ciphertextToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
-            this.ciphertextToolStripMenuItem1.Text = "Ciphertext";
-            // 
-            // encryptionKeyToolStripMenuItem1
-            // 
-            this.encryptionKeyToolStripMenuItem1.Name = "encryptionKeyToolStripMenuItem1";
-            this.encryptionKeyToolStripMenuItem1.Size = new System.Drawing.Size(153, 22);
-            this.encryptionKeyToolStripMenuItem1.Text = "Encryption Key";
-            // 
             // EncryptionMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -298,8 +298,8 @@ namespace EncryptionHeckingCode
             this.Controls.Add(this.encryptRadioButton);
             this.Controls.Add(this.ciphertextTextbox);
             this.Controls.Add(this.ciphertextLabel);
-            this.Controls.Add(this.hideEncryptionKeyCheckbox);
-            this.Controls.Add(this.GenerateRandomKeyButton);
+            this.Controls.Add(this.RandomKeyCheckBox);
+            this.Controls.Add(this.EncryptButton);
             this.Controls.Add(this.encryptionKeyLabel);
             this.Controls.Add(this.encryptionKeyTextbox);
             this.Controls.Add(this.plaintextTextboxLabel);
@@ -331,8 +331,8 @@ namespace EncryptionHeckingCode
         private System.Windows.Forms.Label plaintextTextboxLabel;
         private System.Windows.Forms.TextBox encryptionKeyTextbox;
         private System.Windows.Forms.Label encryptionKeyLabel;
-        private System.Windows.Forms.Button GenerateRandomKeyButton;
-        private System.Windows.Forms.CheckBox hideEncryptionKeyCheckbox;
+        private System.Windows.Forms.Button EncryptButton;
+        private System.Windows.Forms.CheckBox RandomKeyCheckBox;
         private System.Windows.Forms.Label ciphertextLabel;
         private System.Windows.Forms.RichTextBox ciphertextTextbox;
         private RadioButton encryptRadioButton;
