@@ -10,7 +10,7 @@ namespace EncryptionHeckingCode
         {
             InitializeComponent();
         }
-
+        //
         private void hideEncryptionKeyCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox checkBox = sender as CheckBox;
@@ -19,6 +19,7 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
+            //
           //  encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
         }
         
