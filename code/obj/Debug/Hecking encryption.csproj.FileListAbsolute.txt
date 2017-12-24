@@ -1,0 +1,26 @@
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\bin\Debug\Hecking encryption.exe.config
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\bin\Debug\Hecking encryption.exe
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\bin\Debug\Hecking encryption.pdb
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking encryption.csprojResolveAssemblyReference.cache
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking_encryption.MainForm.resources
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking_encryption.Properties.Resources.resources
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking encryption.exe
+E:\Programming\C#\Okay Google\Hecking encryption\Hecking encryption\obj\Debug\Hecking encryption.pdb
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\bin\Debug\Hecking encryption.exe.config
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryption.exe
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryption.pdb
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\bin\Debug\Hecking encryption.exe
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\bin\Debug\Hecking encryption.pdb
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryption.csprojResolveAssemblyReference.cache
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking_encryption.MainForm.resources
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking_encryption.Properties.Resources.resources
+D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe.config
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.EncryptionMainForm.resources
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.Properties.Resources.resources
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.pdb
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.exe
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.pdb
