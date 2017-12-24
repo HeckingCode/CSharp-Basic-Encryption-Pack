@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hecking_encryption
+namespace EncryptionHeckingCode
 {
     public class Functions
     {
@@ -20,26 +20,30 @@ namespace Hecking_encryption
 
         public class Key
         {
-
-            public Key(int length, string type)
+            /// <summary>
+            /// Object for creating the key 
+            /// </summary>
+            /// <param name="length">length of key</param>
+            /// <param name="alphanumeric">true = alphanumeric, false = ascii range 32 ->126</param>s
+            public Key(int length, bool alphanumeric)
             {
-                //0 alphanumerical, 2 = ascii range 32 -> 126
-                Generate(length, type);
+                
+                Generate(length, alphanumeric);
             }
-            internal static string Generate(int length, string type)
+            internal static string Generate(int length, bool alphanumeric)
             {
                  Random rnd = new Random();
                  string key = "";
                  List<char> alphabet = new List<char>();
                
                 int lower = 0,   higher = 0,   hook= 0,  jump = 0;
-                if (type == "0")
+                if (alphanumeric)
                 {
                      lower = 65;  higher = 123;  hook = 91;  jump = 97;
                 }
-                if(type == "1")
+                if(!alphanumeric)
                 {
-                    lower = 32; higher = 126; hook = 91; jump = 92;
+                    lower = 32; higher = 126; hook = 90; jump = 92;
                 }
                 for (int i = lower; i < higher; i++)
                 {
