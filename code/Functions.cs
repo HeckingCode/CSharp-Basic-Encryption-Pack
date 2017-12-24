@@ -39,7 +39,7 @@ namespace Hecking_encryption
                 }
                 if(type == "1")
                 {
-                    lower = 32; higher = 126; hook = 91; jump = 92;
+                    lower = 32; higher = 126; hook = 90; jump = 92;
                 }
                 for (int i = lower; i < higher; i++)
                 {
