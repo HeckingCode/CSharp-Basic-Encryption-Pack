@@ -16,6 +16,11 @@ D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryptio
 D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking_encryption.MainForm.resources
 D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking_encryption.Properties.Resources.resources
 D:\Git\Hecking code enc\CSharp-Basic-Encryption-Pack\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
-D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\Hecking encryption.exe.config
-D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.exe
-D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.pdb
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe.config
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.EncryptionMainForm.resources
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.Properties.Resources.resources
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.pdb
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.exe
+D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.pdb
