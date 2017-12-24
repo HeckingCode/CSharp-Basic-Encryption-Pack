@@ -66,10 +66,10 @@ namespace EncryptionHeckingCode
             this.encryptionMethodComboBox.FormattingEnabled = true;
             this.encryptionMethodComboBox.HighlightColor = System.Drawing.Color.Silver;
             this.encryptionMethodComboBox.Items.AddRange(new object[] {
+            "AES",
             "RSA",
             "Triple DES",
             "Blowfish",
-            "AES",
             "Twofish"});
             this.encryptionMethodComboBox.Location = new System.Drawing.Point(166, 30);
             this.encryptionMethodComboBox.Margin = new System.Windows.Forms.Padding(4);
