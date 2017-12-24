@@ -19,7 +19,7 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
-            encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
+            //encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
         }
         
         private void CheckToEnableEncryptButton(object sender, EventArgs e)
