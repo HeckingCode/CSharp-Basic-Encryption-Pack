@@ -11,6 +11,15 @@ namespace EncryptionHeckingCode
             InitializeComponent();
         }
 
+        public enum EncryptionType
+        {
+            AES,
+            RSA,
+            TripleDES,
+            Blowfish,
+            Twofish
+        }
+
         private void hideEncryptionKeyCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox checkBox = sender as CheckBox;
@@ -19,7 +28,33 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
-           // encryptionKeyTextbox.Text = KeyGenerator.NewKey(128);
+          
+           //AES
+           if(encryptionMethodComboBox.SelectedIndex == 0)
+            {
+
+            }
+           //RSA
+           if(encryptionMethodComboBox.SelectedIndex == 1)
+            {
+                MessageBox.Show("Being developed soon!");
+            }
+           //TripleDes
+           if(encryptionMethodComboBox.SelectedIndex == 2)
+            {
+                MessageBox.Show("Being developed soon!");
+            }
+           //Blowfish
+           if(encryptionMethodComboBox.SelectedIndex == 3)
+            {
+                MessageBox.Show("Being developed soon!");
+            }
+           //TwoFish
+           if(encryptionMethodComboBox.SelectedIndex == 4)
+            {
+                MessageBox.Show("Being developed soon!");
+            }
+
         }
         
         private void CheckToEnableEncryptButton(object sender, EventArgs e)

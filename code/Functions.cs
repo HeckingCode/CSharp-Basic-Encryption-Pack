@@ -8,28 +8,57 @@ namespace EncryptionHeckingCode
 {
     public class Functions
     {
-       internal virtual void Encrypt()
+       public virtual string Encrypt()
+        {
+            return "";
+        }
+
+        public virtual string Decrypt()
+        {
+            return "";
+        }
+
+        public virtual void start()
         {
 
         }
 
-        internal virtual void Decrypt()
+        public virtual void stop()
         {
 
         }
+    
 
         public class Key
         {
             /// <summary>
             /// Object for creating the key 
             /// </summary>
-            /// <param name="length">length of key</param>
-            /// <param name="alphanumeric">true = alphanumeric, false = ascii range 32 ->126</param>s
-            public Key(int length, bool alphanumeric)
+            
+
+            readonly string keyContent;
+            readonly int length;
+
+            /// <summary>
+            /// Randomly generated key
+            /// </summary>
+            /// <param name="length">desired length of the key</param>
+            /// <param name="alphanumeric">whether the key is alphanumeric (true) or not (false)</param>
+             Key(int length, bool alphanumeric)
             {
-                
                 Generate(length, alphanumeric);
             }
+            
+            /// <summary>
+            /// User input key
+            /// </summary>
+            /// <param name="input"> key input by the user</param>
+             Key(string input)
+            {
+                keyContent = input;
+                length = keyContent.Length;
+            }
+
             internal static string Generate(int length, bool alphanumeric)
             {
                  Random rnd = new Random();
