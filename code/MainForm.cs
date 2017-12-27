@@ -28,11 +28,31 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
-          
+            Encryptor E = null;
+            
+            
            //AES
            if(encryptionMethodComboBox.SelectedIndex == 0)
             {
+                if (RandomKeyCheckBox.Checked)
+                {
+                    E = new AES();
+                }
+                else
+                {
+                    E = new AES(encryptionKeyTextbox.Text);
+                }
+                E.Start(encryptRadioButton.Checked);
 
+                while (!E.complete)
+                {
+                    EncryptButton.Enabled = false;
+                }
+
+                //when e.complete = true
+                E.Stop();
+                E.Output(ref ciphertextTextbox);
+                
             }
            //RSA
            if(encryptionMethodComboBox.SelectedIndex == 1)

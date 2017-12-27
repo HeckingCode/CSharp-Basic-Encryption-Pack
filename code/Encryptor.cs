@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EncryptionHeckingCode
 {
-    public class Functions
+    public class Encryptor
     {
-       public virtual string Encrypt()
+        public bool complete = false;
+        public string Result = null;
+
+        public virtual string Encrypt()
         {
             return "";
         }
@@ -18,12 +22,19 @@ namespace EncryptionHeckingCode
             return "";
         }
 
-        public virtual void start()
+        public virtual void Output(ref RichTextBox t)
+        {
+            t.Text = this.Result;
+            //self cancelling operation, nothing further to be done once text is generated and output
+            this.Stop();
+        }
+
+        public virtual void Start(bool Encrypt)
         {
 
         }
 
-        public virtual void stop()
+        public virtual void Stop()
         {
 
         }
@@ -44,7 +55,7 @@ namespace EncryptionHeckingCode
             /// </summary>
             /// <param name="length">desired length of the key</param>
             /// <param name="alphanumeric">whether the key is alphanumeric (true) or not (false)</param>
-             Key(int length, bool alphanumeric)
+           public  Key(int length, bool alphanumeric)
             {
                 Generate(length, alphanumeric);
             }
@@ -53,7 +64,7 @@ namespace EncryptionHeckingCode
             /// User input key
             /// </summary>
             /// <param name="input"> key input by the user</param>
-             Key(string input)
+           public  Key(string input)
             {
                 keyContent = input;
                 length = keyContent.Length;

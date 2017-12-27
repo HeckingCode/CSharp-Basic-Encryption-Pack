@@ -267,6 +267,7 @@ namespace EncryptionHeckingCode
             // encryptRadioButton
             // 
             this.encryptRadioButton.AutoSize = true;
+            this.encryptRadioButton.Checked = true;
             this.encryptRadioButton.Location = new System.Drawing.Point(373, 483);
             this.encryptRadioButton.Name = "encryptRadioButton";
             this.encryptRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -284,7 +285,6 @@ namespace EncryptionHeckingCode
             this.decryptRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.decryptRadioButton.Size = new System.Drawing.Size(81, 23);
             this.decryptRadioButton.TabIndex = 12;
-            this.decryptRadioButton.TabStop = true;
             this.decryptRadioButton.Text = "Decrypt";
             this.decryptRadioButton.UseVisualStyleBackColor = true;
             // 
