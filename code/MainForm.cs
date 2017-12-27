@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -10,6 +11,9 @@ namespace EncryptionHeckingCode
         {
             InitializeComponent();
         }
+
+        private List<Encryptor> arr = new List<Encryptor>();
+
 
         public enum EncryptionType
         {
@@ -28,7 +32,16 @@ namespace EncryptionHeckingCode
 
         private void GenerateRandomKeyButton_Click(object sender, EventArgs e)
         {
+            if(EncryptButton.Text == "Stop")
+            {
+                foreach (Encryptor f in arr){
+                    f.Stop();
+                    EncryptButton.Text = "Encrypt";
+                    arr.Remove(f);
+                }
+            }
             Encryptor E = null;
+            
             
             
            //AES
@@ -59,9 +72,14 @@ namespace EncryptionHeckingCode
                 //E.Start(encryptRadioButton.Checked);
                 if (E != null)
                 {
+                    E.Start(encryptRadioButton.Checked);
+                    EncryptButton.Text = "Stop";
+                    arr.Add(E);
+                    
                     while (!E.complete)
                     {
-                        EncryptButton.Enabled = false;
+                        
+                        //wait for the asynchronous process to finish, signalled by E.complete being set;
                     }
 
                     //when e.complete = true
