@@ -36,22 +36,40 @@ namespace EncryptionHeckingCode
             {
                 if (RandomKeyCheckBox.Checked)
                 {
+                    //start with random generated key
                     E = new AES();
-                }
-                else
-                {
-                    E = new AES(encryptionKeyTextbox.Text);
-                }
-                E.Start(encryptRadioButton.Checked);
+                    MessageBox.Show("Made E 2");
+                } else {
+                    //start with user input key
+                    if (encryptionKeyTextbox.Text.Length >= 128 &&  (encryptionKeyTextbox.Text.Length % 32) == 0)
+                    {
+                        E = new AES(encryptionKeyTextbox.Text);
+                        MessageBox.Show("Made E");
 
-                while (!E.complete)
+                    }
+                    else
+                    {
+                        MessageBox.Show("Key length must be greater than 128 and a multiple of 32");
+                        
+                    }
+                    
+
+                }
+                //if encrypt radio ticked to determine if encryption or decryption
+                //E.Start(encryptRadioButton.Checked);
+                if (E != null)
                 {
-                    EncryptButton.Enabled = false;
+                    while (!E.complete)
+                    {
+                        EncryptButton.Enabled = false;
+                    }
+
+                    //when e.complete = true
+                    E.Output(ref ciphertextTextbox);
                 }
 
-                //when e.complete = true
-                E.Stop();
-                E.Output(ref ciphertextTextbox);
+               
+                
                 
             }
            //RSA

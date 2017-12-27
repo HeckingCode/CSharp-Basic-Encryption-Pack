@@ -43,12 +43,12 @@ namespace EncryptionHeckingCode
         public class Key
         {
             /// <summary>
-            /// Object for creating the key 
+            /// Encryption key and generator
             /// </summary>
             
 
-            readonly string keyContent;
-            readonly int length;
+           internal readonly string keyContent;
+           internal readonly int length;
 
             /// <summary>
             /// Randomly generated key
@@ -57,7 +57,8 @@ namespace EncryptionHeckingCode
             /// <param name="alphanumeric">whether the key is alphanumeric (true) or not (false)</param>
            public  Key(int length, bool alphanumeric)
             {
-                Generate(length, alphanumeric);
+               keyContent = Generate(length, alphanumeric);
+                length = keyContent.Length;
             }
             
             /// <summary>
@@ -70,6 +71,8 @@ namespace EncryptionHeckingCode
                 length = keyContent.Length;
             }
 
+            //keeping this static because if we want to generate a new key we may as well generate a completely new object to ensure
+            //true random is implemented by not reusing the same random 
             internal static string Generate(int length, bool alphanumeric)
             {
                  Random rnd = new Random();
