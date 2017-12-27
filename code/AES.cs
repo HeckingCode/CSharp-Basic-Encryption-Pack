@@ -16,7 +16,7 @@ namespace EncryptionHeckingCode
         {
             //called if random checkbox is ticked meaning  we genertae a key 
                 //just for now assume length is 20 and alphanumeric is true until UI updated 
-               key = new Key(20, true); 
+               key = new Key(128, true); 
         }
 
         public AES(string input)
