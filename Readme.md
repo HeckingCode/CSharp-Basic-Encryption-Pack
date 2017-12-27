@@ -7,10 +7,10 @@ can be tracked. Don't just overwrite files, fork a branch using the fork button,
 
 Feautres to add:
 
-1. RSA
-2. Triple DES
-3. Blowfish
-4. AES
+1. AES
+2. RSA
+3. Triple DES
+4. BlowFish
 5. Twofish
 
 All taken from here https://www.storagecraft.com/blog/5-common-encryption-algorithms/
