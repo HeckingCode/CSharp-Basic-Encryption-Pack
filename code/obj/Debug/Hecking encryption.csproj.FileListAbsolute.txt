@@ -34,3 +34,12 @@ C:\Users\James\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\Heck
 C:\Users\James\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe
 C:\Users\James\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.pdb
 D:\Git\hecking jm\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.csprojResolveAssemblyReference.cache
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe.config
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.exe
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\bin\Debug\EncryptionHeckingCode.pdb
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.csprojResolveAssemblyReference.cache
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.EncryptionMainForm.resources
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.Properties.Resources.resources
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\Hecking encryption.csproj.GenerateResource.Cache
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.exe
+C:\Users\livid\Documents\GitHub\CSharp-Basic-Encryption-Pack\code\obj\Debug\EncryptionHeckingCode.pdb

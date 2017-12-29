@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EncryptionHeckingCode
 {
     public class Encryptor
     {
-        public bool complete = false;
+        public bool IsComplete = false;
         public string Result = null;
 
         public virtual string Encrypt()
@@ -24,48 +21,45 @@ namespace EncryptionHeckingCode
 
         public virtual void Output(ref RichTextBox t)
         {
-            t.Text = this.Result;
+            t.Text = Result;
             //self cancelling operation, nothing further to be done once text is generated and output
-            this.Stop();
+            Stop();
         }
 
-        public virtual void Start(bool Encrypt)
+        public virtual void Start(bool encrypt)
         {
-
         }
 
         public virtual void Stop()
         {
-
         }
-    
+
 
         public class Key
         {
             /// <summary>
-            /// Encryption key and generator
+            ///     Encryption key and generator
             /// </summary>
-            
+            internal readonly string keyContent;
 
-           internal readonly string keyContent;
-           internal readonly int length;
+            internal readonly int length;
 
             /// <summary>
-            /// Randomly generated key
+            ///     Randomly generated key
             /// </summary>
             /// <param name="length">desired length of the key</param>
             /// <param name="alphanumeric">whether the key is alphanumeric (true) or not (false)</param>
-           public  Key(int length, bool alphanumeric)
+            public Key(int length, bool alphanumeric)
             {
-               keyContent = Generate(length, alphanumeric);
+                keyContent = Generate(length, alphanumeric);
                 length = keyContent.Length;
             }
-            
+
             /// <summary>
-            /// User input key
+            ///     User input key
             /// </summary>
             /// <param name="input"> key input by the user</param>
-           public  Key(string input)
+            public Key(string input)
             {
                 keyContent = input;
                 length = keyContent.Length;
@@ -75,38 +69,39 @@ namespace EncryptionHeckingCode
             //true random is implemented by not reusing the same random 
             internal static string Generate(int length, bool alphanumeric)
             {
-                 Random rnd = new Random();
-                 string key = "";
-                 List<char> alphabet = new List<char>();
-               
-                int lower = 0,   higher = 0,   hook= 0,  jump = 0;
+                Random rnd = new Random();
+                string key = "";
+                List<char> alphabet = new List<char>();
+
+                int lower = 0, higher = 0, hook = 0, jump = 0;
                 if (alphanumeric)
                 {
-                     lower = 65;  higher = 123;  hook = 91;  jump = 97;
+                    lower = 65;
+                    higher = 123;
+                    hook = 91;
+                    jump = 97;
                 }
-                if(!alphanumeric)
+                if (!alphanumeric)
                 {
-                    lower = 32; higher = 126; hook = 90; jump = 92;
+                    lower = 32;
+                    higher = 126;
+                    hook = 90;
+                    jump = 92;
                 }
                 for (int i = lower; i < higher; i++)
                 {
-                    alphabet.Add((char)(i));
+                    alphabet.Add((char) i);
                     if (i == hook)
-                    {
                         i = jump;
-                    }
                 }
-                for(int i =0; i < length; i++)
-                {
+                for (int i = 0; i < length; i++)
                     key += alphabet[rnd.Next(0, alphabet.Count)];
-                }
                 return key;
             }
         }
 
         public class IV
         {
-
         }
     }
 }

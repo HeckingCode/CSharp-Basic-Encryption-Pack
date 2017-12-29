@@ -42,6 +42,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="AES.cs" />
+    <Compile Include="EncryptionType.cs" />
     <Compile Include="Encryptor.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>

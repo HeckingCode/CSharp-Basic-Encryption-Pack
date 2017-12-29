@@ -49,8 +49,8 @@ namespace EncryptionHeckingCode
             this.plaintextTextboxLabel = new System.Windows.Forms.Label();
             this.encryptionKeyTextbox = new System.Windows.Forms.TextBox();
             this.encryptionKeyLabel = new System.Windows.Forms.Label();
-            this.EncryptButton = new System.Windows.Forms.Button();
-            this.RandomKeyCheckBox = new System.Windows.Forms.CheckBox();
+            this.encryptButton = new System.Windows.Forms.Button();
+            this.randomKeyCheckBox = new System.Windows.Forms.CheckBox();
             this.ciphertextLabel = new System.Windows.Forms.Label();
             this.ciphertextTextbox = new System.Windows.Forms.RichTextBox();
             this.encryptRadioButton = new System.Windows.Forms.RadioButton();
@@ -224,26 +224,25 @@ namespace EncryptionHeckingCode
             this.encryptionKeyLabel.TabIndex = 6;
             this.encryptionKeyLabel.Text = "Encryption Key";
             // 
-            // EncryptButton
+            // encryptButton
             // 
-            this.EncryptButton.Location = new System.Drawing.Point(141, 65);
-            this.EncryptButton.Name = "EncryptButton";
-            this.EncryptButton.Size = new System.Drawing.Size(104, 28);
-            this.EncryptButton.TabIndex = 7;
-            this.EncryptButton.Text = "Encrypt";
-            this.EncryptButton.UseVisualStyleBackColor = true;
-            this.EncryptButton.Click += new System.EventHandler(this.GenerateRandomKeyButton_Click);
+            this.encryptButton.Location = new System.Drawing.Point(141, 65);
+            this.encryptButton.Name = "encryptButton";
+            this.encryptButton.Size = new System.Drawing.Size(104, 28);
+            this.encryptButton.TabIndex = 7;
+            this.encryptButton.Text = "Encrypt";
+            this.encryptButton.UseVisualStyleBackColor = true;
+            this.encryptButton.Click += new System.EventHandler(this.EncryptButton_Click);
             // 
-            // RandomKeyCheckBox
+            // randomKeyCheckBox
             // 
-            this.RandomKeyCheckBox.AutoSize = true;
-            this.RandomKeyCheckBox.Location = new System.Drawing.Point(251, 68);
-            this.RandomKeyCheckBox.Name = "RandomKeyCheckBox";
-            this.RandomKeyCheckBox.Size = new System.Drawing.Size(194, 23);
-            this.RandomKeyCheckBox.TabIndex = 8;
-            this.RandomKeyCheckBox.Text = "Randomly generate key";
-            this.RandomKeyCheckBox.UseVisualStyleBackColor = true;
-            this.RandomKeyCheckBox.CheckedChanged += new System.EventHandler(this.hideEncryptionKeyCheckbox_CheckedChanged);
+            this.randomKeyCheckBox.AutoSize = true;
+            this.randomKeyCheckBox.Location = new System.Drawing.Point(251, 68);
+            this.randomKeyCheckBox.Name = "randomKeyCheckBox";
+            this.randomKeyCheckBox.Size = new System.Drawing.Size(197, 23);
+            this.randomKeyCheckBox.TabIndex = 8;
+            this.randomKeyCheckBox.Text = "Randomly Generate Key";
+            this.randomKeyCheckBox.UseVisualStyleBackColor = true;
             // 
             // ciphertextLabel
             // 
@@ -298,8 +297,8 @@ namespace EncryptionHeckingCode
             this.Controls.Add(this.encryptRadioButton);
             this.Controls.Add(this.ciphertextTextbox);
             this.Controls.Add(this.ciphertextLabel);
-            this.Controls.Add(this.RandomKeyCheckBox);
-            this.Controls.Add(this.EncryptButton);
+            this.Controls.Add(this.randomKeyCheckBox);
+            this.Controls.Add(this.encryptButton);
             this.Controls.Add(this.encryptionKeyLabel);
             this.Controls.Add(this.encryptionKeyTextbox);
             this.Controls.Add(this.plaintextTextboxLabel);
@@ -331,8 +330,8 @@ namespace EncryptionHeckingCode
         private System.Windows.Forms.Label plaintextTextboxLabel;
         private System.Windows.Forms.TextBox encryptionKeyTextbox;
         private System.Windows.Forms.Label encryptionKeyLabel;
-        private System.Windows.Forms.Button EncryptButton;
-        private System.Windows.Forms.CheckBox RandomKeyCheckBox;
+        private System.Windows.Forms.Button encryptButton;
+        private System.Windows.Forms.CheckBox randomKeyCheckBox;
         private System.Windows.Forms.Label ciphertextLabel;
         private System.Windows.Forms.RichTextBox ciphertextTextbox;
         private RadioButton encryptRadioButton;
